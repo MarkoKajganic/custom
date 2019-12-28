@@ -1,0 +1,12 @@
+{
+    "name": "kajgana/custom",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/"
+        },
+        "classmap": ["vendor"]
+    }
+
+}
