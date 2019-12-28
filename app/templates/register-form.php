@@ -1,8 +1,11 @@
 <?php include 'includes/header.php' ?>
 
     <div>
+        <?php if(isset($data['message'])) {?>
+        <span class="message"><?php echo $data['message']; ?></span>
+        <?php } ?>
 
-        <form action="/register" target="_blank" onsubmit="checkRegisterFields">
+        <form action="/register" method="post">
             <div>
                 <h1>Register</h1>
                 <p>Please fill in this form to create an account.</p>
@@ -23,8 +26,6 @@
 
                 <button type="submit">Register</button>
             </div>
-
-
         </form>
 
     </div>

@@ -14,4 +14,11 @@ abstract class BaseController {
         $html = ob_get_clean();
         return $html;
     }
+
+    function redirect($url, $permanent = false)
+    {
+        header('Location: ' . $url, true, $permanent ? 301 : 302);
+
+        exit();
+    }
 }
