@@ -11,6 +11,7 @@
                 Name
             </th>
         </tr>
+        <!--    We iterate through the search results, print the values.    -->
         <?php foreach($data['results'] as $result) { ?>
             <tr>
                 <td>

@@ -1,4 +1,7 @@
 <?php
 return [
-'dbName' => 'localhost',
+    'dbLocation' => 'localhost',
+    'dbUser' => 'root',
+    'dbPass' => 'root',
+    'dbName' => 'quantox',
 ];

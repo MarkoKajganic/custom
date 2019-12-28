@@ -2,20 +2,19 @@
 
  class Connection
  {
-     private $dbSettings;
-     private $connection;
+     protected $dbSettings;
+     protected $connection;
 
      public function __construct($db){
          $this->dbSettings = $db;
-//         exit();
     }
 
      protected function OpenCon()
      {
-         $dbhost = $this->dbSettings['dbName'];
-         $dbuser = "root";
-         $dbpass = "root";
-         $db = "quantox";
+         $dbhost = $this->dbSettings['dbLocation'];
+         $dbuser = $this->dbSettings['dbUser'];
+         $dbpass = $this->dbSettings['dbPass'];
+         $db = $this->dbSettings['dbName'];
          $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n" . $conn->error);
 
          $this->connection = $conn;

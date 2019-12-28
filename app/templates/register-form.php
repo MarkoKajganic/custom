@@ -30,4 +30,8 @@
 
     </div>
 
+    <div>
+        <span>You already have an account? Click here to <a href="/login-form">login</a>.</span>
+    </div>
+
 <?php include 'includes/footer.php' ?>

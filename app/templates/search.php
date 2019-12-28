@@ -6,4 +6,6 @@
     <input type="submit" value="SEARCH">
 </form>
 
+<a href="/">RETURN TO HOME</a>
+
 <?php include 'includes/footer.php' ?>

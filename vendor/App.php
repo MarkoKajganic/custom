@@ -21,6 +21,7 @@ class App {
             $response = $controllerInstance->$fullControllerMethodName(...$this->params);
         } catch (Exception $e) {
             echo $e;
+            exit();
         }
 
         echo $response;
